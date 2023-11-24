@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora WEB</title>
+    <link rel="stylesheet" href="{% static 'css/calculadora.css'%}">
 </head>
 
 <body>
@@ -44,6 +47,8 @@
             <button id="modulo" onclick="mod()">Módulo</button>
             <button id="factorial" onclick="fact()">Factorial</button>
         </div>
+
+        <script src="{% static 'js/calculadora.js'%}"></script>
         
 </body>
 
